@@ -3,10 +3,18 @@ package com.baizhi.entity;
 import java.io.Serializable;
 
 public class User implements Serializable {
-
+    private String password;
     private  String id;
     private  Integer age;
     private  String name;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public User() {
         super();
